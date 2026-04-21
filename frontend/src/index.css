@@ -68,6 +68,6 @@
     }
 
     .spinner {
-        @apply w-10 h-10 border border-border border-t-accent animate-spin;
+        @apply w-10 h-10 border border-border border-t-accent rounded-full animate-spin;
     }
 }
