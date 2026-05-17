@@ -1,39 +1,51 @@
+<a href="README.md">
+  <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
+</a>
+<a href="README-TR.md">
+  <img src="https://img.shields.io/badge/Dil-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
+</a>
+
+  <br />
+  <br />
+
 <div align="center">
   <img src="frontend/public/kintaro.png" width="120" height="120" />
+
   <br />
   <br />
 
-  [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-  [![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-  [![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-  [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-  [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
-
-  <p align="center">
-    <b>Self-Hosted File Management & Organization Station</b>
-    <br />
-    Upload. Tag. Filter. Archive locally.
-    <br />
-    <br />
-    <a href="#features">Features</a> •
-    <a href="#technologies">Technologies</a> •
-    <a href="#installation">Installation</a> •
-    <a href="#structure">Structure</a>
+  <p>
+    Manage and categorize your files with the Cyberpunk theme.
   </p>
-</div>
 
----
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+  <p>
+    <a href="#features">Features</a> •
+    <a href="#tech">Technologies</a> •
+    <a href="#installation">Installation</a> •
+    <a href="#license">License</a> •
+    <a href="#gallery">Gallery</a>
+  </p>
+
+  <br />
+  <br />
+</div>
 
 ## 📋 About
 
-**Kintaro File Manager** is a self-hosted file management application with a cyberpunk-inspired interface. It lets you upload, organize, tag, and filter any type of file through a sleek, modern web interface backed by SQLite — no external database required.
+**File Manager** is a self-hosted file management application with a cyberpunk-inspired interface. It lets you upload, organize, tag, and filter any type of file through a sleek, modern web interface backed by SQLite — no external database required.
 
 All files are stored locally on your machine — no cloud, no third-party servers. Upload your files, assign tags and keywords, and find them instantly with powerful filtering. The application automatically generates thumbnails for images and videos, giving you a visual overview of your entire archive.
 
 <img src="frontend/public/md/20260305210513749.jpg" width="100%" style="border-radius: 8px;" />
 
-## <a id="features"></a> ✨ Features
+## ✨ Features <a id="features"></a>
 
 ### 📤 File Upload
 
@@ -120,51 +132,53 @@ A dark, modern interface designed for power users.
 - **Modern Typography**: Syne for headings, Plus Jakarta Sans for body text — imported from Google Fonts.
 - **Responsive Design**: Fully responsive layout that adapts from mobile to ultra-wide displays.
 - **Smooth Transitions**: Hover effects, color transitions, and scale animations on file cards.
-- **Lazy Loading (Pagination)**: Files load in batches of 50 with a "Load More" button for optimal performance.
+- **Pagination**: Files load in batches of 50 with a "Load More" button for optimal performance.
 
-<img src="frontend/public/md/20260305210513666.jpg" width="100%" style="border-radius: 8px;" />
-
-## <a id="technologies"></a> 🛠️ Technologies
+## <a id="tech"></a>🛠️ Technologies
 
 ### Backend
-- **[Node.js](https://nodejs.org/)** — JavaScript runtime for the server.
-- **[Express](https://expressjs.com/)** — Minimal web framework for REST API endpoints.
-- **[SQLite](https://www.sqlite.org/)** + **[better-sqlite3](https://github.com/WiseLibs/better-sqlite3)** — Embedded SQL database with zero external dependencies.
-- **[Multer](https://github.com/expressjs/multer)** — Middleware for handling multipart/form-data file uploads.
-- **[Sharp](https://sharp.pixelplumbing.com/)** — High-performance image processing for thumbnail generation.
-- **[Fluent-FFmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)** — FFmpeg wrapper for video thumbnail extraction.
-- **[Archiver](https://github.com/archiverjs/node-archiver)** — ZIP archive creation for bulk downloads.
+
+- **Node.js**: JavaScript runtime for the server.
+- **Express**: Minimal web framework for REST API endpoints.
+- **SQLite** + **better-sqlite3**: Embedded SQL database with zero external dependencies.
+- **Multer**: Middleware for handling multipart/form-data file uploads.
+- **Sharp**: High-performance image processing for thumbnail generation.
+- **Fluent-FFmpeg**: FFmpeg wrapper for video thumbnail extraction.
+- **Archiver**: ZIP archive creation for bulk downloads.
 
 ### Frontend
-- **[React 19](https://react.dev/)** — Component-based UI with the latest React features.
-- **[Vite](https://vitejs.dev/)** — Lightning-fast build tool and dev server.
-- **[Tailwind CSS v4](https://tailwindcss.com/)** — Utility-first CSS framework for rapid styling.
-- **[Framer Motion](https://www.framer.com/motion/)** — Production-ready animation library.
-- **[Axios](https://axios-http.com/)** — Promise-based HTTP client.
-- **[React Icons](https://react-icons.github.io/react-icons/)** — Popular icon sets as React components.
 
-<img src="frontend/public/md/20260305210513573.jpg" width="100%" style="border-radius: 8px;" />
+- **React 19**: Component-based UI with the latest React features.
+- **Vite**: Lightning-fast build tool and dev server.
+- **Tailwind CSS**: Utility-first CSS framework for rapid styling.
+- **Framer Motion**: Production-ready animation library.
+- **Axios**: Promise-based HTTP client.
+- **React Icons**: Popular icon sets as React components.
 
-## <a id="installation"></a> 🚀 Installation
+## 🚀 Installation <a id="installation"></a>
 
 ### Requirements
+
 - **Node.js** (v18+)
 
 ### Step-by-Step Setup
 
 1. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/xkintaro/file-manager.git
    cd file-manager
    ```
 
 2. **Install Backend Dependencies:**
+
    ```bash
    cd backend
    npm install
    ```
 
 3. **Install Frontend Dependencies:**
+
    ```bash
    cd ../frontend
    npm install
@@ -173,6 +187,7 @@ A dark, modern interface designed for power users.
 4. **Configure Environment Variables:**
 
    **Backend** (`backend/.env`):
+
    ```env
    BACKEND_PORT=5034
    FRONTEND_URL=http://localhost:5033
@@ -181,6 +196,7 @@ A dark, modern interface designed for power users.
    ```
 
    **Frontend** (`frontend/.env`):
+
    ```env
    VITE_API_URL=http://localhost:5034
    VITE_FRONTEND_PORT=5033
@@ -190,12 +206,6 @@ A dark, modern interface designed for power users.
 
 5. **Start the Application:**
 
-   **Option A — Using the batch script (Windows):**
-   ```
-   run.bat
-   ```
-
-   **Option B — Manual start:**
    ```bash
    # Terminal 1 — Backend
    cd backend && node src/server.js
@@ -206,58 +216,24 @@ A dark, modern interface designed for power users.
 
 6. Open `http://localhost:5033` in your browser to start managing your files.
 
+## 📄 License <a id="license"></a>
+
+This project is licensed under the MIT License. You can review the [LICENSE](LICENSE) file for details.
+
+## 🖼️ Gallery <a id="gallery"></a>
+
+<img src="frontend/public/md/20260305210513666.jpg" width="100%" style="border-radius: 8px;" />
+
+#
+
+<img src="frontend/public/md/20260305210513573.jpg" width="100%" style="border-radius: 8px;" />
+
+#
+
 <img src="frontend/public/md/20260305210513455.jpg" width="100%" style="border-radius: 8px;" />
 
-## <a id="structure"></a> 📂 Project Structure
-
-```
-kintaro-file-manager/
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   │   ├── file.controller.js     # File upload, delete, download, tag/keyword update
-│   │   │   └── tag.controller.js      # Tag CRUD operations
-│   │   ├── db/
-│   │   │   └── database.js            # SQLite connection and schema initialization
-│   │   ├── models/
-│   │   │   ├── file.model.js          # File data model (SQLite queries)
-│   │   │   └── tag.model.js           # Tag data model (SQLite queries)
-│   │   ├── routes/
-│   │   │   ├── file.routes.js         # File API endpoints
-│   │   │   └── tag.routes.js          # Tag API endpoints
-│   │   ├── utils/
-│   │   │   └── constants.js           # Directory path configuration
-│   │   └── server.js                  # Express server entry point
-│   ├── data/                          # SQLite database file (gitignored)
-│   ├── uploads/                       # Uploaded files directory (gitignored)
-│   ├── thumbnails/                    # Generated thumbnails (gitignored)
-│   ├── package.json                   # Backend dependencies
-│   └── .env                           # Backend environment config
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── file/
-│   │   │   │   ├── FileList.jsx       # Main file grid with search, filter, selection
-│   │   │   │   └── FileUpload.jsx     # Upload modal with drag-and-drop
-│   │   │   ├── tag/
-│   │   │   │   └── TagManagement.jsx  # Tag create, edit, delete panel
-│   │   │   └── ui/                    # Reusable UI components (Button, Modal, etc.)
-│   │   ├── hooks/                     # Custom React hooks for data fetching
-│   │   ├── services/                  # API service functions (file, tag)
-│   │   ├── utils/                     # Utility functions (formatting)
-│   │   ├── App.jsx                    # Main application component
-│   │   └── index.css                  # Global styles and design tokens
-│   ├── public/                        # Static assets (logos, icons)
-│   ├── vite.config.js                 # Vite configuration with API proxy
-│   ├── package.json                   # Frontend dependencies
-│   └── .env                           # Frontend environment config
-├── run.bat                            # Windows batch script to start both services
-├── run-kintaro-file-manager.vbs       # Windows silent startup script
-└── README.md
-```
-
----
+#
 
 <p align="center">
-  <sub>❤️ Developed by Kintaro.</sub>
+  <sub>❤️ Developed by "Mustafa TAŞAL" (kintaro)</sub>
 </p>
